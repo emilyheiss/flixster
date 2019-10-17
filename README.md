@@ -21,7 +21,8 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### App Walkthough GIF
 
-<img src="https://media.giphy.com/media/fSe1x6mS0ZDDdUy1UT/giphy.gif" width=250><br> <img src="https://media.giphy.com/media/YRo2FPJ6hOmRyHIEiz/giphy.gif" width=250><br>
+<img src="https://media.giphy.com/media/fSe1x6mS0ZDDdUy1UT/giphy.gif" width=250><br> 
+<img src="https://media.giphy.com/media/YRo2FPJ6hOmRyHIEiz/giphy.gif" width=250><br>
 
 ### Notes
 The Auto-Layout feature was tough at the beginning, especially when working with the title label and the synopsis label, but the longer I played with constraint values, the more it seemed to make sense to me.
