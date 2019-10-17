@@ -15,19 +15,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="awn-i6-Vzc">
-                                <rect key="frame" x="100" y="261" width="214" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="awn-i6-Vzc">
+                                <rect key="frame" x="138" y="298.66666666666669" width="138" height="139"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="An App by Emily Heiss" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAx-Z5-VAu">
-                                <rect key="frame" x="100" y="509" width="214" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="An App by Emily Heiss" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAx-Z5-VAu">
+                                <rect key="frame" x="108" y="493.66666666666669" width="198" height="23.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="198" id="nlR-RZ-Fme"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Italic" family="Trebuchet MS" pointSize="20"/>
                                 <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aAx-Z5-VAu" secondAttribute="trailing" constant="108" id="62n-kI-VLV"/>
+                            <constraint firstItem="awn-i6-Vzc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Ghg-tB-mzb"/>
+                            <constraint firstItem="aAx-Z5-VAu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="HOe-5n-9fh"/>
+                            <constraint firstItem="aAx-Z5-VAu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="R09-Zp-9qE"/>
+                            <constraint firstItem="awn-i6-Vzc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="SeN-uR-j8U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="aAx-Z5-VAu" secondAttribute="bottom" constant="219" id="Vxe-cy-uYw"/>
+                            <constraint firstItem="aAx-Z5-VAu" firstAttribute="top" secondItem="awn-i6-Vzc" secondAttribute="bottom" constant="56.329999999999998" id="fl9-jP-cFP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
