@@ -1,33 +1,26 @@
 //
-//  MovieDetailsViewController.swift
+//  SuperheroDetailsViewController.swift
 //  flixster
 //
-//  Created by Emily Heiss on 10/23/19.
+//  Created by Emily Heiss on 10/28/19.
 //  Copyright © 2019 Heiss. All rights reserved.
 //
 
 import UIKit
 import AlamofireImage
-class MovieDetailsViewController: UIViewController {
-    
-    
-    @IBOutlet weak var scrollView: UIScrollView!
+
+class SuperheroDetailsViewController: UIViewController {
+
     @IBOutlet weak var backdropImageView: UIImageView!
     @IBOutlet weak var posterImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var synopsisLabel: UILabel!
     
-    var movie: [String: Any]!
-
+    var movie: [String:Any]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let contentWidth = scrollView.bounds.width
-        let contentHeight = scrollView.bounds.height * 4.25
-        scrollView.contentSize = CGSize(width: contentWidth, height: contentHeight)
-
-
-        // Do any additional setup after loading the view.
         titleLabel.text = movie["title"] as? String
         titleLabel.sizeToFit()
         
@@ -43,8 +36,8 @@ class MovieDetailsViewController: UIViewController {
         let backdropUrl = URL(string: "https://image.tmdb.org/t/p/w780" + backdropPath)
         backdropImageView.af_setImage(withURL: backdropUrl!)
         
+        // Do any additional setup after loading the view.
     }
-    
     
 
     /*
